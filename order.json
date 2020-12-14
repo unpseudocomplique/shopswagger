@@ -6,7 +6,7 @@
   "productId": "5fd72af1bf94a494eadb7c68",
   "adress": {
     "road": "29 rue machin",
-    "zip": "33000",
+    "zip": 33000,
     "city": "Bordeaux"
   }
 },{
@@ -17,7 +17,7 @@
   "productId": "5fd72af1bf94a494eadb7c68",
   "adress": {
     "road": "50 rue de la ouais",
-    "zip": "33000",
+    "zip": 33000,
     "city": "Bordeaux"
   }
 },{
@@ -28,7 +28,7 @@
   "productId": "5fd72af1bf94a494eadb7c68",
   "adress": {
     "road": "29 boulevar georges pompidou",
-    "zip": "44200",
+    "zip": 44200,
     "city": "Nantes"
   }
 }]
