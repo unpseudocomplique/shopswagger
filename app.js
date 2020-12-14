@@ -2,6 +2,8 @@ require("dotenv").config();
 const express = require("express");
 var helmet = require("helmet");
 var cors = require("cors");
+const productRoute = require("./routes/product");
+const mongoose = require("mongoose");
 
 const app = express();
 
@@ -10,7 +12,7 @@ app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const mongoose = require("mongoose");
+app.use("/product", productRoute);
 
 mongoose.connect(`mongodb://localhost:27017/${process.env.DB_NAME}`, {
   useNewUrlParser: true,
@@ -22,21 +24,8 @@ db.once("open", function () {
   console.log("Connected to mongo server.");
 });
 
-//Define a schema
-var Schema = mongoose.Schema;
-
-var ProductSchema = new Schema({
-  libelle: String,
-  price: Number,
-  tags: [String],
-});
-
-// Compile model from schema
-var Product = mongoose.model("product", ProductSchema, "product");
-
 app.get("/", async (req, res) => {
-  const filter = {};
-  res.json(await Product.find(filter));
+  res.json({ message: "hello accueil" });
 });
 
 app.listen(process.env.PORT, () => {
