@@ -3,6 +3,7 @@ const express = require("express");
 var helmet = require("helmet");
 var cors = require("cors");
 const productRoute = require("./routes/product");
+const orderRoute = require("./routes/order");
 const mongoose = require("mongoose");
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/product", productRoute);
+app.use("/order", orderRoute);
 
 mongoose.connect(`mongodb://localhost:27017/${process.env.DB_NAME}`, {
   useNewUrlParser: true,
