@@ -8,4 +8,54 @@
     "sac",
     "femme"
   ]
+},{
+  "_id": {
+    "$oid": "5fd74a1d78603247a01a67e8"
+  },
+  "libelle": "chaussure",
+  "price": 65.45,
+  "tags": [
+    "chaussure",
+    "femme"
+  ]
+},{
+  "_id": {
+    "$oid": "5fd74a4f78603247a01a67e9"
+  },
+  "libelle": "t-shirt",
+  "price": 30.45,
+  "tags": [
+    "haut",
+    "femme"
+  ]
+},{
+  "_id": {
+    "$oid": "5fd74b1878603247a01a67ea"
+  },
+  "libelle": "veste",
+  "price": 160.45,
+  "tags": [
+    "fourrure",
+    "femme"
+  ]
+},{
+  "_id": {
+    "$oid": "5fd74b5378603247a01a67eb"
+  },
+  "libelle": "claquette",
+  "price": 15.45,
+  "tags": [
+    "plage",
+    "homme"
+  ]
+},{
+  "_id": {
+    "$oid": "5fd74b6a78603247a01a67ec"
+  },
+  "libelle": "chaussette",
+  "price": 7.45,
+  "tags": [
+    "sous-vêtements",
+    "homme"
+  ]
 }]
