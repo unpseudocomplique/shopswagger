@@ -1,0 +1,57 @@
+{
+  "swagger": "2.0",
+  "info": {
+  "version": "1.0.0",
+  "title": "My SwaggerShop Project",
+  "description": "My SwaggerShop Project Application API",
+  "license": {
+  "name": "MIT",
+  "url": "https://opensource.org/licenses/MIT"
+  }
+  },
+  "host": "localhost:8000",
+  "basePath": "/",
+  "paths": {
+    "/products": {
+    "get": {
+    "tags": [
+    "Products"
+    ],
+    "summary": "Get all products in system",
+    "responses": {
+    "200": {
+    "description": "OK",
+    "schema": {
+    "$ref": "#/Product"
+    }
+    }
+    }
+    }
+    }
+    },
+     "definitions": {
+    "Product": {
+    "required": [
+    "_id",
+    "libelle",
+    "price",
+    "tags"
+    ],
+    "properties": {
+    "_id": {
+    "type": "string",
+    "uniqueItems": true
+    },
+    "libelle": {
+    "type": "string"
+    },
+    "price": {
+    "type": "double"
+    },
+    "tags": {
+      "type": "array"
+    }
+    }
+    }
+  }
+}
