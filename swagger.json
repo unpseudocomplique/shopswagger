@@ -20,7 +20,33 @@
           "200": {
             "description": "OK"
           }
-        }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "offset",
+            "required": false,
+            "description": "integer to define the offset - default 0",
+            "type": "int",
+            "example": "0"
+          },
+          {
+            "in": "query",
+            "name": "perPage",
+            "required": false,
+            "description": "integer to define the number of elements per page - default 2",
+            "type": "int",
+            "example": "2"
+          },
+          {
+            "in": "query",
+            "name": "id",
+            "required": false,
+            "description": "string represent the object uid",
+            "type": "string",
+            "example": "5fd72af1bf94a494eadb7c68"
+          }
+        ]
       }
     }
   },
