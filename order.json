@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "5fd72cd3bf94a494eadb7c6a"
+  },
+  "quantity": 1,
+  "productId": "5fd72af1bf94a494eadb7c68",
+  "adress": {
+    "road": "29 rue machin",
+    "zip": "33000",
+    "city": "Bordeaux"
+  }
+},{
+  "_id": {
+    "$oid": "5fd733bbf598d520a494d9b0"
+  },
+  "quantity": 2,
+  "productId": "5fd72af1bf94a494eadb7c68",
+  "adress": {
+    "road": "50 rue de la ouais",
+    "zip": "33000",
+    "city": "Bordeaux"
+  }
+},{
+  "_id": {
+    "$oid": "5fd733e0f598d520a494d9b1"
+  },
+  "quantity": 1,
+  "productId": "5fd72af1bf94a494eadb7c68",
+  "adress": {
+    "road": "29 boulevar georges pompidou",
+    "zip": "44200",
+    "city": "Nantes"
+  }
+}]

@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "5fd72af1bf94a494eadb7c68"
+  },
+  "libelle": "sac",
+  "price": 45.45,
+  "tags": [
+    "sac",
+    "femme"
+  ]
+}]
