@@ -6,7 +6,10 @@ const productRoute = require("./routes/product");
 const mongoose = require("mongoose");
 
 const app = express();
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(cors());
 app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
